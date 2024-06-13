@@ -1,0 +1,10 @@
+{
+   "user": {
+    "nom":"aitsaid",
+    "prenom":"kawtar",
+    "age":"18",
+    "talks":["ajouter","modifier","supprimer"]
+   }
+
+
+}

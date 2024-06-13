@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(247, 216, 221);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid;
+            padding: 30px;
+            margin: 90px;
+            background-color: white;
+           }
+           form span{
+            color: red;
+           }
+
+           .error_bordur {
+            border: 2px red;
+           }
+           button{
+            background-color: rgb(77, 77, 233);
+            color: white;
+            width: 70px;
+            margin: 10px;   
+           }
+    </style>
+</head>
+<body>  
+    <!-- <label for="nom">nom :</label>
+    <input type="text" id="nom">
+    <label for="prenom">prenom :</label>
+    <input type="text" id="prenom"> -->
+    <div class="container">
+     <form action="/">
+        <h1>sign up</h1>
+        <label for="name">Username : </label>
+        <input type="text" class="txt-username" name="Username">
+        <span class="Username-span"></span>
+        <label for="email">email :</label>
+        <input type="email" class="txt-email" name="email">
+        <label for="password">password : </label>
+        <input type="password"placeholder="enter ur password">
+        <label for="password">confirm password : </label>
+        <input type="password" placeholder=" Reenter your password" name="password">
+        <button class="btn-ajouter">sign up</button>
+     </form>
+    </div> 
+    <script src="key.js"></script>
+</body>
+</html>

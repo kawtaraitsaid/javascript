@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les expressions reguliaires</title>
+</head>
+<body>
+    <script>
+        // g est globale
+      let nom =/DD[0-9]{3}/gi;
+
+      let prenom = new RegExp('kawtar?');
+      const article =" Lorem ipsum DD105 dolor, sit amet consectetur adipisicing elit. Commodi DD106 aliquam kawtarr, doloremque  DD104 itaque, voluptas, corporis eveniet iusto, voluptates consequuntur vel omnis temporibus dolores sapiente ut ex debitis minima odio. Sunt, similique!"
+      
+    //   search method ===> -1 or index
+      let position = article.search(nom);
+
+    // match method    null or array
+      let groupesDD = article.match(nom);
+
+    // replace method
+      let updateArticle = article.replace(nom, "DEV");
+    //   let updateArticle = article.replaceAll(searchText, "DEV");
+    // split method  (String ===>array)
+
+    // test method pattern
+    let tester = nom.test(article);
+    console.log(tester);
+
+    // test method pattern 
+    let chercherElem = nom.exec(article);
+    console.log(chercherElem);
+
+    let modules = "PHP/HTML-CSS_poo";
+    let listModules = modules.split(/[/_]/);
+    console.log(listModules);
+    console.log(position)
+    console.log(groupesDD)
+    console.log(updateArticle)
+   </script>
+</body>
+</html>

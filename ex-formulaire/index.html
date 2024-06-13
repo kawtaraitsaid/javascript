@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <style>
+        body{
+            background-image: linear-gradient(lightgray,lightblue);
+            display: flex;
+            flex-direction: column;
+        }
+        .content{
+            border: 2px solid;
+        }
+        input{
+            height: 30px;
+            width: 70px;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form class="content">
+       <label for="code">Code/CIN:</label>
+       <input type="text">
+       <label for="usename">Usename:</label>
+       <input type="text">
+       <select>
+        <option value="Maroc">Maroc</option>
+        <option value="Canada">Canada</option>
+        <option value="US">US</option>
+       </select>
+       <select>
+        <option></option>
+       </select>
+       <button>add</button>
+    </form> 
+   <script src="script.js"></script> 
+</body>
+</html>

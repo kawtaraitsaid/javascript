@@ -1,0 +1,14 @@
+body {   
+    background-color: rgb(161, 161, 243);
+    display:flex;
+    justify-content: center;
+     
+}
+
+.forme {
+   border: 1px solid black;
+   padding:20px;
+   position:relative;
+   top:15em;
+   background-image:url(gojo.jpg);
+}
