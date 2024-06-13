@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>information</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>  
+  <marquee> Pleaze leave a message below</marquee>
+  <div class="cadre">
+    <label for="name">Full name: </label>  
+    <span id="erreur_nom"></span><br> 
+    <label for="Email">Email </label>
+    <input type="Email" id="Email" placeholder="Email">
+    <span id="email_erreur"></span><br>
+    <label for="confirmerEmail">confirmer email</label>
+    <input type="Email" id="confirmerEmail" placeholder="veuillez confirmer l'email"><br>
+    <label for="country">Select your country</label>
+    <select id="country" name="country">
+        <option value="Morroco">Morroco</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Japan">Japan</option>
+        <option value="usa">usa</option>
+        <option value="canada">canada</option>
+        <option value="france">france</option>
+    </select>
+    <label for="message">Message : </label>
+    <textarea id="message"  placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
